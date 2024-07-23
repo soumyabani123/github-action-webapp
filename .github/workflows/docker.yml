@@ -30,4 +30,6 @@ jobs:
 
       - name: Deploy container
         run: |
-          docker run -d -p 80:80 ${{ secrets.DOCKER_USERNAME }}/contactApp:latest
+          docker run -d -p 80:80 ${{ secrets.DOCKER_USERNAME }}/contactApp:latest 
+
+          
