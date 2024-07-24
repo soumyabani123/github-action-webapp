@@ -26,11 +26,11 @@ jobs:
         uses: docker/build-push-action@v3
         with: 
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/contactApp:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/contactapp:latest
 
       - name: Deploy container
         run: |
-          docker run -d -p 80:80 ${{ secrets.DOCKER_USERNAME }}/contactApp:latest 
+          docker run -d -p 80:80 ${{ secrets.DOCKER_USERNAME }}/contactapp:latest 
 
 
 
